@@ -1,8 +1,7 @@
 function Validar(){
     var Inputs = document.getElementsByClassName("input");
-     console.log(Inputs[0].value);
     for(i=0;i<Inputs.length;i++){
-        if(Inputs[i].length < 0){
+        if(Inputs[i].value.length === 0){
             alert("Llena todos los espacios");
             return;
         }
